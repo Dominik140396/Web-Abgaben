@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dummy Game</title>
+    <link rel="stylesheet" href="style.css">
+
+  <!-- Angabe:
+- Grundgerüst ist eine Seite mit neun nummerierten Feldern (Stell dir ein Spielbrett vor)
+- Aktuelle Spielstand wird dabei dadurch gekennzeichnet, dass das entsprechende Feld, auf dem der Spieler steht
+  mit einem farbigen Hintergrund markiert ist.
+- Wenn Spieler einen Zug durchführen will, muss er auf einen Button unter dem Spielfeld klicken
+- Daraufhin wird ihm eine Rechenaufgabe gestellt
+- Diese sollen jeweils auf Zufallswerten basieren
+- Grundsätzliche Rechenarten für jedes Feld sind fest vorgegeben (z.B.: Aufgabe 1 ist eine Addition (+)
+  Aufgabe 2 ist eine Division (/), usw.)
+- Schwierigkeitsgrad soll immer weiter ansteigen
+- Wenn Spieler Aufgabe richtig gelöst hat, rückt er ein Feld vor
+- Wenn Ergebnis falsch ist, bleibt er auf der Position
+- Zweiter Button für Spiel neu starten
+-->
+</head>
+<body>
+<main>
+<article class="flex">
+    <!-- Überschrift der Seite -->
+    <h1>Dummy Game</h1>
+</article>
+
+<article class="game">
+    <!-- Quiz mit 9 Feldern, mit Umrandung auf dem aktiven Quizfeld -->
+    <div class="flexContainer">
+    <div class="container">
+        <div class="one level" id="one"><p>1</p><p id="Level1"></p></div>
+        <div class="two level" id="two"><p>2</p><p id="Level2"></p></div>
+        <div class="three level" id="three"><p>3</p><p id="Level3"></p></div>
+        <div class="four level" id="four"><p>4</p><p id="Level4"></p></div>
+        <div class="five level" id="five"><p>5</p><p id="Level5"></p></div>
+        <div class="six level" id="six"><p>6</p><p id="Level6"></p></div>
+        <div class="seven level" id="seven"><p>7</p><p id="Level7"></p></div>
+        <div class="eight level" id="eight"><p>8</p><p id="Level8"></p></div>
+        <div class="nine level" id="nine"><p>9</p><p id="Level9"></p></div>
+    </div>
+    </div>
+</article>
+    <article class="flex">
+        <h2>Dummy Life</h2>
+    </article>
+    <article class="flexContainer">
+        <div class="lifeThree" id="LifeThree"></div>
+        <div class="lifeTwo" id="LifeTwo"></div>
+        <div class="lifeOne" id="LifeOne"></div>
+    </article>
+
+<article class="buttons">
+    <!-- Buttons zur Aktivierung, Abgabe und neustart des Quizes -->
+    <!-- Sowie Inputfeld für die Rechenaufgabe -->
+    <button type="button" id="next" onclick="game()">Start Dummy Questions</button>
+    <button type="button" id="reload" onclick=window.location.reload()>New Game</button>
+    <label for="userNumber"></label>
+    <input  id="userNumber" type="number" name="userNumber" placeholder="Dummy Answer">
+    <button type="button" id="submit" onclick="checkAnswer()">Submit</button>
+</article>
+<script src="script.js">
+</script>
+</main>
+</body>
+</html>
