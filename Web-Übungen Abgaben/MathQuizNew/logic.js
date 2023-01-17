@@ -21,7 +21,7 @@ const errorMessage = document.getElementById("error-msg");
 const randomValue = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
 function questionGenerator () {
-    let [num1, num2] = [randomValue(1, 20), randomValue(1, 20)];
+    let [num1, num2] = [randomValue(1,20), randomValue(1,20)];
 
     let randomOperator = operators[Math.floor(Math.random() * operators.length)];
 
@@ -34,16 +34,6 @@ function questionGenerator () {
     // Solution
     answerValue = eval(`${num1}${randomOperator}${num2}`);
     question.innerHTML = `${num1} ${randomOperator} ${num2} = <input type="number" id="inputValue" placeholder ="?"\>`
-
-}
-
-function levelCounter() {
-    if (levelPassed){
-        alert("You passed this dummy Question already!");
-    }else{
-        level++;
-        levelPassed = true;
-    }
 }
 
 // Start the Game
