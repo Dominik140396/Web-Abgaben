@@ -8,42 +8,47 @@
 </head>
 
 <body>
-  <main>
-    <header>
-         <h1>Das große Mathe Spektakel</h1>
-    </header>
+    <main>
+        <header>
+            <h1>Das große Mathe Spektakel</h1>
+        </header>
 
 
-    
-      <div id="boxes">
-              <div class="highlight">1</div>
-              <div class="highlight">2</div>
-              <div class="highlight">3</div>
-          <br>
-              <div class="highlight">4</div>
-              <div class="highlight">5</div>
-              <div class="highlight">6</div>
-          <br>
-              <div class="highlight">7</div>
-              <div class="highlight">8</div>
-              <div class="highlight">9</div>
-          </div>
+        <!-- Level boxes -->
+        <section>
+            <div id="boxes">
+                <div class="level-container" id="lvl1">1</div>
+                <div class="level-container" id="lvl2">2</div>
+                <div class="level-container" id="lvl3">3</div>
+                <div class="level-container" id="lvl4">4</div>
+                <div class="level-container" id="lvl5">5</div>
+                <div class="level-container" id="lvl6">6</div>
+                <div class="level-container" id="lvl7">7</div>
+                <div class="level-container" id="lvl8">8</div>
+                <div class="level-container" id="lvl9">9</div>
+            </div>
+        </section>
 
-      <!-- Button Spiel Beginnen -->
-      <button class="eingabeBtn" id="start-btn">
-          Spiel starten
-      </button>
+        <section>
+            <div class="controls-container">
+                <p id="result"></p>
+                <button class="Button" id="start-btn">
+                    Spiel Starten
+                </button>
+            </div>
+        </section>
 
+        <section>
+            <div class="container">
+                <h3>Fülle das leere Feld mit der richtigen Zahl oder Operator</h3>
+                <div id="question"></div>
+                <button class="Button" id="submit-btn">Eingabe bestätigen</button>
+                <p id="error-msg">Error</p>
+            </div>
+        </section>
 
-      <div class="container">
-          <h3>Fülle das leere Feld mit der richtigen Zahl oder Operator</h3>
-          <div id="question"></div>
-          <button id="submit-btn">Eingabe bestätigen</button>
-          <p id="error-msg">Some random Error Message</p>
-      </div>
+    </main>
 
-  </main>
-
-  <script src="logic.js"></script>
+    <script src="logic.js"></script>
 </body>
 </html>
