@@ -9,7 +9,7 @@ h1 {
     font-size: 3em;
     text-align: center;
     font-weight: bold;
-    margin: 25px;
+    margin: 22px;
 }
 
 #boxes {
@@ -48,10 +48,7 @@ body {
     background-color: #ffffff;
     width: 90%;
     max-width: 31.25em;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 60%;
-    left: 50%;
+    margin: auto;
     padding: 5em 3em;
     border-radius: 0.5em;
 }

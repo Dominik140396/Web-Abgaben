@@ -3,6 +3,12 @@
 let answerValue;
 let operatorQuestion;
 let operators = ["+", "-", "*"];
+let level = 1;
+let levelPassed = false;
+let gameWon = false;
+let borderColorCurrentQuestion = 'Yellow';
+let borderColorPassedQuestion = 'Green';
+let borderColorNextQuestion = 'Red';
 
 const startBtn = document.getElementById("start-btn");
 const question = document.getElementById("question");
@@ -47,6 +53,21 @@ const questionGenerator = () => {
         question.innerHTML = `${num1} ${randomOperator} ${num2} = <input type="number" id="inputValue" placeholder="?"\>`;
     }
 
+    // ?????
+    function styling() {
+        if (levelPassed > 0) {
+            document.getElementById("Level" + levelPassed).style.borderColor = 'green';
+            document.getElementById("Level" + level).style.borderColor = 'red';
+        }
+    }
+
+
+    function levelUp() {
+        for (let level = 1; level < 10; level++) {
+
+        }
+    }
+
     //User Input Check
     submitBtn.addEventListener("click", () => {
         errorMessage.classList.add("hide");
@@ -56,6 +77,8 @@ const questionGenerator = () => {
             //If the user guessed correct answer
             if (userInput == answerValue) {
                 stopGame(`<span>Correct</span> Answer`);
+                levelPassed = true;
+                level++;
             }
             //If user inputs operator other than +,-,*
             else if (operatorQuestion && !operators.includes(userInput)) {
@@ -75,6 +98,11 @@ const questionGenerator = () => {
     });
 };
 
+
+
+
+
+
 //Start Game
 startBtn.addEventListener("click", () => {
     operatorQuestion = false;
@@ -84,6 +112,8 @@ startBtn.addEventListener("click", () => {
     //Controls and buttons visibility
     controls.classList.add("hide");
     startBtn.classList.add("hide");
+
+
     questionGenerator();
 });
 
