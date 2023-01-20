@@ -6,9 +6,40 @@
 }
 
 h1 {
+    font-size: 3em;
     text-align: center;
     font-weight: bold;
+    margin: 25px;
 }
+
+#boxes {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: space-around;
+    background-color: black;
+    padding: 20px;
+    height: 200px;
+    border-style: groove;
+    border-color: black;
+    outline: none;
+    color: white;
+    border-radius: 0.3em;
+}
+
+.num1, .num2, .num3, .num4, .num5, .num6, .num7, .num8, .num9 {
+    background-color: gray;
+    border-style: solid;
+    border-color: white;
+    padding: 35px;
+    margin: 25px;
+    cursor: pointer;
+    border-radius: 0.3em;
+}
+
+
 body {
     background-color: #f4c531;
 }
@@ -19,7 +50,7 @@ body {
     max-width: 31.25em;
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 50%;
+    top: 60%;
     left: 50%;
     padding: 5em 3em;
     border-radius: 0.5em;

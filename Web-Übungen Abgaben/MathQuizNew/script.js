@@ -29,8 +29,8 @@ const questionGenerator = () => {
     let solution = eval(`${num1}${randomOperator}${num2}`);
 
     //For placing the input at random position
-    //(1 for num1, 2 for num2, 3 for operator, anything else(4) for solution)
-    let randomVar = randomValue(1, 5);
+    //(1 for num1, 2 for num2, 3 for operator, anything else(4,5 & 6) for solution)
+    let randomVar = randomValue(1, 6);
 
     if (randomVar == 1) {
         answerValue = num1;
@@ -55,7 +55,7 @@ const questionGenerator = () => {
         if (userInput) {
             //If the user guessed correct answer
             if (userInput == answerValue) {
-                stopGame(`Yippie!! <span>Correct</span> Answer`);
+                stopGame(`<span>Correct</span> Answer`);
             }
             //If user inputs operator other than +,-,*
             else if (operatorQuestion && !operators.includes(userInput)) {
@@ -64,7 +64,7 @@ const questionGenerator = () => {
             }
             //If user guessed wrong answer
             else {
-                stopGame(`Opps!! <span>Wrong</span> Answer`);
+                stopGame(`<span>Wrong</span> Answer`);
             }
         }
         //If user input is empty
@@ -90,7 +90,7 @@ startBtn.addEventListener("click", () => {
 //Stop Game
 const stopGame = (resultText) => {
     result.innerHTML = resultText;
-    startBtn.innerText = "Restart";
+    startBtn.innerText = "Next Level";
     controls.classList.remove("hide");
     startBtn.classList.remove("hide");
 };
