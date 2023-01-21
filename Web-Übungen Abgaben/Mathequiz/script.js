@@ -6,9 +6,6 @@ let operators = ["+", "-", "*"];
 let level = 1;
 let levelPassed = false;
 let gameWon = false;
-let borderColorCurrentQuestion = 'Yellow';
-let borderColorPassedQuestion = 'Green';
-let borderColorNextQuestion = 'Red';
 
 const startBtn = document.getElementById("start-btn");
 const question = document.getElementById("question");
