@@ -121,3 +121,10 @@ function start() {
         letTheShowBegin();
     } else letTheShowBegin();
 }
+
+
+function levelUp() {
+    if (userInput == answerValue)
+        for (let level = 1; level < 10; level++) {
+        }
+}

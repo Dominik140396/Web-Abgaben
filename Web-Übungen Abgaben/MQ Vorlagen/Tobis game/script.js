@@ -123,6 +123,7 @@ function dummyQuestions() {
         return;
     }
     levelPassed = false;
+
     switch (level){
         case 1:
             createTowRandomInt(20,1);
