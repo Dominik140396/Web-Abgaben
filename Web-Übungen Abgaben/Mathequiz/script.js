@@ -19,10 +19,89 @@ const errorMessage = document.getElementById("error-msg");
 //Random Value Generator
 const randomValue = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
+function styling() {
+    switch (gameLevel) {
+        case 1:
+            if (gameLevel === 1) {
+                document.getElementById("Level1").style.borderColor = '#00FFFF';
+            }
+            if (gameLevel > 1) {
+                document.getElementById("Level1").style.borderColor = 'green';
+            }
+            break;
+        case 2:
+            if (gameLevel === 2) {
+                document.getElementById("Level2").style.borderColor = '#00FFFF';
+            }
+            if (gameLevel > 2) {
+                document.getElementById("Level2").style.borderColor = 'green';
+            }
+            break;
+        case 3:
+            if (gameLevel === 3) {
+                document.getElementById("Level3").style.borderColor = '#00FFFF';
+            }
+            if (gameLevel > 3) {
+                document.getElementById("Level3").style.borderColor = 'green';
+            }
+            break;
+        case 4:
+            if (gameLevel === 4) {
+                document.getElementById("Level4").style.borderColor = '#00FFFF';
+            }
+            if (gameLevel > 4) {
+                document.getElementById("Level4").style.borderColor = 'green';
+            }
+            break;
+        case 5:
+            if (gameLevel === 5) {
+                document.getElementById("Level5").style.borderColor = '#00FFFF';
+            }
+            if (gameLevel > 5) {
+                document.getElementById("Level5").style.borderColor = 'green';
+            }
+            break;
+        case 6:
+            if (gameLevel === 6) {
+                document.getElementById("Level6").style.borderColor = '#00FFFF';
+            }
+            if (gameLevel > 6) {
+                document.getElementById("Level6").style.borderColor = 'green';
+            }
+            break;
+        case 7:
+            if (gameLevel === 7) {
+                document.getElementById("Level7").style.borderColor = '#00FFFF';
+            }
+            if (gameLevel > 7) {
+                document.getElementById("Level7").style.borderColor = 'green';
+            }
+            break;
+        case 8:
+            if (gameLevel === 8) {
+                document.getElementById("Level8").style.borderColor = '#00FFFF';
+            }
+            if (gameLevel > 8) {
+                document.getElementById("Level8").style.borderColor = 'green';
+            }
+            break;
+        case 9:
+            if (gameLevel === 9) {
+                document.getElementById("Level9").style.borderColor = '#00FFFF';
+            }
+            break;
+    }
+}
+
+
+
+
+
+
     function newGame() {
         if (gameLevel >= 9) {
             gameWon = true;
-            alert("Glückwunsch! Du hast das Spiel gewonnen!")
+            alert("Congratulation! Du hast das Spiel gewonnen!")
             window.location.reload();
             }
     }
@@ -113,7 +192,7 @@ submitBtn.addEventListener("click", () => {
         //Controls and buttons visibility
         controls.classList.add("hide");
         startBtn.classList.add("hide");
-
+        styling();
         questionGenerator();
     });
 
