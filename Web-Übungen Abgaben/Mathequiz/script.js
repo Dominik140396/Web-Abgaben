@@ -22,7 +22,7 @@ const randomValue = (min, max) => Math.floor(Math.random() * (max - min)) + min;
     function newGame() {
         if (gameLevel >= 9) {
             gameWon = true;
-            alert("Du hast das Spiel gewonnen")
+            alert("Glückwunsch! Du hast das Spiel gewonnen!")
             window.location.reload();
             }
     }
@@ -123,5 +123,4 @@ submitBtn.addEventListener("click", () => {
         startBtn.innerText = "Next Level";
         controls.classList.remove("hide");
         startBtn.classList.remove("hide");
-        console.log(gameLevel)
     };

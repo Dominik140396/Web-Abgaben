@@ -13,6 +13,7 @@ h1 {
 }
 
 #boxes {
+    width: 90%;
     margin: auto;
     justify-content: space-around;
     display: flex;
