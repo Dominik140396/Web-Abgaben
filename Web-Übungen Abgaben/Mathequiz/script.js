@@ -27,49 +27,49 @@ function styling() {
             }
             break;
         case 2:
-            document.getElementById("Level1").style.borderColor = '#008000';
+            document.getElementById("Level1").style.borderColor = '#ADFF2F';
             if (gameLevel === 2) {
                 document.getElementById("Level2").style.borderColor = '#00FFFF';
             }
             break;
         case 3:
-            document.getElementById("Level2").style.borderColor = '#008000';
+            document.getElementById("Level2").style.borderColor = '#ADFF2F';
             if (gameLevel === 3) {
                 document.getElementById("Level3").style.borderColor = '#00FFFF';
             }
             break;
         case 4:
-            document.getElementById("Level3").style.borderColor = '#008000';
+            document.getElementById("Level3").style.borderColor = '#ADFF2F';
             if (gameLevel === 4) {
                 document.getElementById("Level4").style.borderColor = '#00FFFF';
             }
             break;
         case 5:
-            document.getElementById("Level4").style.borderColor = '#008000';
+            document.getElementById("Level4").style.borderColor = '#ADFF2F';
             if (gameLevel === 5) {
                 document.getElementById("Level5").style.borderColor = '#00FFFF';
             }
             break;
         case 6:
-            document.getElementById("Level5").style.borderColor = '#008000';
+            document.getElementById("Level5").style.borderColor = '#ADFF2F';
             if (gameLevel === 6) {
                 document.getElementById("Level6").style.borderColor = '#00FFFF';
             }
             break;
         case 7:
-            document.getElementById("Level6").style.borderColor = '#008000';
+            document.getElementById("Level6").style.borderColor = '#ADFF2F';
             if (gameLevel === 7) {
                 document.getElementById("Level7").style.borderColor = '#00FFFF';
             }
             break;
         case 8:
-            document.getElementById("Level7").style.borderColor = '#008000';
+            document.getElementById("Level7").style.borderColor = '#ADFF2F';
             if (gameLevel === 8) {
                 document.getElementById("Level8").style.borderColor = '#00FFFF';
             }
             break;
         case 9:
-            document.getElementById("Level8").style.borderColor = '#008000';
+            document.getElementById("Level8").style.borderColor = '#ADFF2F';
             if (gameLevel === 9) {
                 document.getElementById("Level9").style.borderColor = '#00FFFF';
             }
@@ -101,9 +101,13 @@ function styling() {
 
         //Wenn es ins Minus geht
         if (randomOperator === "-" && numbers[1] > numbers[0]) {
-            let num1 = numbers[0];
             numbers[0] = numbers[1];
-            numbers[1] = num1;
+            numbers[1] = numbers[0];
+        }
+
+        if(randomOperator === "/" && numbers[1] > numbers[1]) {
+            numbers[0] = numbers[1];
+            numbers[1] = numbers[0];
         }
 
         //Solve equation
