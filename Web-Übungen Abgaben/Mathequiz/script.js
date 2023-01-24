@@ -70,11 +70,10 @@ function styling() {
 
 function lifeCounter () {
     if (life === 2) {
-        document.getElementById("Life1").style.display = "none";
+        document.querySelector(".life1").style.display = "none";
     }
     if (life === 1) {
-        document.getElementById("Life1").style.display = "none";
-        document.getElementById("Life2").style.display = "none";
+        document.querySelector(".life2").style.display = "none";
     }
     if (life === 0) {
         alert("Du hast verkakt!")
@@ -156,6 +155,7 @@ submitBtn.addEventListener("click", () => {
             errorMessage.innerHTML = "Your solution is wrong!";
             life--;
         }
+        lifeCounter();
     }
     //If user input is empty
     else {
@@ -173,6 +173,7 @@ submitBtn.addEventListener("click", () => {
         //Controls and buttons visibility
         controls.classList.add("hide");
         startBtn.classList.add("hide");
+        lifeCounter();
         styling();
         questionGenerator();
     });
