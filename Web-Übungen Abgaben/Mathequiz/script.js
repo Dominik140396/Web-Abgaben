@@ -148,6 +148,7 @@ submitBtn.addEventListener("click", () => {
         else if (operatorQuestion && !operators.includes(userInput)) {
             errorMessage.classList.remove("hide");
             errorMessage.innerHTML = "Please enter a valid operator";
+            life--;
         }
         //If user guessed wrong answer
         else {
