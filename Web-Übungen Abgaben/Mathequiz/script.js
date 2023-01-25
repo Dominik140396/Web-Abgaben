@@ -22,48 +22,39 @@ const randomValue = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 function styling() {
     switch (gameLevel) {
         case 1:
-            gameLevel = 1
-                document.getElementById("Level1").style.borderColor = '#00FFFF';
+            document.getElementById("Level1").style.borderColor = '#00FFFF';
             break;
         case 2:
             document.getElementById("Level1").style.borderColor = '#ADFF2F';
-            gameLevel = 2
-                document.getElementById("Level2").style.borderColor = '#00FFFF';
+            document.getElementById("Level2").style.borderColor = '#00FFFF';
             break;
         case 3:
             document.getElementById("Level2").style.borderColor = '#ADFF2F';
-            gameLevel = 3
-                document.getElementById("Level3").style.borderColor = '#00FFFF';
+            document.getElementById("Level3").style.borderColor = '#00FFFF';
             break;
         case 4:
             document.getElementById("Level3").style.borderColor = '#ADFF2F';
-            gameLevel = 4
-                document.getElementById("Level4").style.borderColor = '#00FFFF';
+            document.getElementById("Level4").style.borderColor = '#00FFFF';
             break;
         case 5:
             document.getElementById("Level4").style.borderColor = '#ADFF2F';
-            gameLevel = 5
-                document.getElementById("Level5").style.borderColor = '#00FFFF';
+            document.getElementById("Level5").style.borderColor = '#00FFFF';
             break;
         case 6:
             document.getElementById("Level5").style.borderColor = '#ADFF2F';
-            gameLevel = 6
-                document.getElementById("Level6").style.borderColor = '#00FFFF';
+            document.getElementById("Level6").style.borderColor = '#00FFFF';
             break;
         case 7:
             document.getElementById("Level6").style.borderColor = '#ADFF2F';
-            gameLevel = 7
-                document.getElementById("Level7").style.borderColor = '#00FFFF';
+            document.getElementById("Level7").style.borderColor = '#00FFFF';
             break;
         case 8:
             document.getElementById("Level7").style.borderColor = '#ADFF2F';
-            gameLevel = 8
-                document.getElementById("Level8").style.borderColor = '#00FFFF';
+            document.getElementById("Level8").style.borderColor = '#00FFFF';
             break;
         case 9:
             document.getElementById("Level8").style.borderColor = '#ADFF2F';
-            gameLevel = 9
-                document.getElementById("Level9").style.borderColor = '#00FFFF';
+            document.getElementById("Level9").style.borderColor = '#00FFFF';
             break;
     }
 }
@@ -81,16 +72,15 @@ function lifeCounter () {
     }
 }
 
-    function newGame() {
-        if (gameLevel >= 10) {
-            gameWon = true;
-            alert("Congratulation! Du hast das Spiel gewonnen!")
-            window.location.reload();
-            }
+function newGame() {
+    if (gameLevel >= 10) {
+        gameWon = true;
+        alert("Congratulation! Du hast das Spiel gewonnen!")
+        window.location.reload();
     }
+}
 
     const questionGenerator = () => {
-
         if (gameLevel <= 3) {
             numbers = [randomValue(1, 20), randomValue(1, 20)];
         } else if (gameLevel > 3 && gameLevel <= 6) {
