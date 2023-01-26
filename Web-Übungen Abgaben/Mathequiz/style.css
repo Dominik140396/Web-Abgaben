@@ -32,6 +32,7 @@ h1 {
 }
 
 .num1, .num2, .num3, .num4, .num5, .num6, .num7, .num8, .num9 {
+    border-width: thick;
     background-color: gray;
     border-style: solid;
     border-color: white;
@@ -40,7 +41,6 @@ h1 {
     cursor: pointer;
     border-radius: 0.3em;
 }
-
 
 body {
     background-color: #f4c531;
