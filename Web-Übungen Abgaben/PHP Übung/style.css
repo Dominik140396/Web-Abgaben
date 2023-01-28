@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vH;
+    font-size: 20px;
+    background: rgb(112,241,209);
+    background: linear-gradient(54deg, rgba(112,241,209,1) 0%, rgba(124,154,246,1) 100%);
+}
+
+.Eiswaffel {
+    max-height: 3em;
+    max-width: 3em;
+}
+.center {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+    margin: 25px;
+    display: inline-block;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    margin: 25px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 10px;
+}
+
+.flex > * {
+    flex: 1 1 250px;
+}
+
+.flex .checkboxen, .flex .radio {
+    display: flex;
+}
+
+input, textarea {
+    padding: 5px;
+    border: 1px solid #8b8888;
+    box-shadow: 1px 1px 1px inset #444444;
+}
+
+form {
+    max-width: 960px;
+    margin: auto;
+}
+
+.btn {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn-send{
+    background-color: #85a05a;
+}
+
+.btn-cancle {
+    background-color: #d8a7a7;
+}
+
+.Eisbecher {
+    padding: 25px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 180px;
+    max-height: 170px;
+}
