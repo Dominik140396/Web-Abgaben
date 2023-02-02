@@ -1,0 +1,52 @@
+body{
+    background-color: black;
+    color: #7ae708;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+article {
+    width: 90vw;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 10px;
+}
+.flex > * {
+    flex: 1 1 250px;
+}
+.flex   .checkBoxen, .flex .radio {
+    display: flex;
+}
+input, textarea {
+    padding: 5px;
+    border: 1px solid #17178c;
+    box-shadow: 1px 1px 3px inset #5b0093;
+    border-radius: 10px;
+}
+form {
+    max-width: 960px;
+    margin: auto;
+}
+.btn {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.btn-send {
+    background-color: rgba(60, 255, 0, 0.54);
+}
+.btn-cancel{
+    background-color: rgba(255, 0, 0, 0.5);
+
+}*/
